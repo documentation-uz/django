@@ -5,6 +5,9 @@ export default defineConfig({
     title: "Django documentation",
     description: "Django documentation in Uzbek language",
     srcDir: "src/pages/",
+    head: [
+        ['link', {rel: 'icon', href: 'https://static.djangoproject.com/img/favicon.6dbf28c0650e.ico'}],
+    ],
     themeConfig: {
         search: {
             provider: 'local'
@@ -477,16 +480,28 @@ export default defineConfig({
                             {text: 'validate_ipv4_address', link: '/api-reference/validators/validate-ipv4-address'},
                             {text: 'validate_ipv6_address', link: '/api-reference/validators/validate-ipv6-address'},
                             {text: 'validate_ipv46_address', link: '/api-reference/validators/validate-ipv46-address'},
-                            {text: 'validate_comma_separated_integer_list', link: '/api-reference/validators/validate-comma-separated-integer-list'},
+                            {
+                                text: 'validate_comma_separated_integer_list',
+                                link: '/api-reference/validators/validate-comma-separated-integer-list'
+                            },
                             {text: 'int_list_validator', link: '/api-reference/validators/int-list-validator'},
                             {text: 'MaxValueValidator', link: '/api-reference/validators/max-value-validator'},
                             {text: 'MinValueValidator', link: '/api-reference/validators/min-value-validator'},
                             {text: 'MaxLengthValidator', link: '/api-reference/validators/max-length-validator'},
                             {text: 'MinLengthValidator', link: '/api-reference/validators/min-length-validator'},
                             {text: 'DecimalValidator', link: '/api-reference/validators/decimal-validator'},
-                            {text: 'FileExtensionValidator', link: '/api-reference/validators/file-extension-validator'},
-                            {text: 'validate_image_file_extension', link: '/api-reference/validators/validate-image-file-extension'},
-                            {text: 'ProhibitNullCharactersValidator', link: '/api-reference/validators/prohibit-null-characters-validator'},
+                            {
+                                text: 'FileExtensionValidator',
+                                link: '/api-reference/validators/file-extension-validator'
+                            },
+                            {
+                                text: 'validate_image_file_extension',
+                                link: '/api-reference/validators/validate-image-file-extension'
+                            },
+                            {
+                                text: 'ProhibitNullCharactersValidator',
+                                link: '/api-reference/validators/prohibit-null-characters-validator'
+                            },
                             {text: 'StepValueValidator', link: '/api-reference/validators/step-value-validator'},
                         ]
                     }
@@ -495,7 +510,7 @@ export default defineConfig({
         ],
 
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/documentation-uz/django.documentation.uz'}
+            {icon: 'github', link: 'https://github.com/documentation-uz/django'}
         ]
     }
 })
