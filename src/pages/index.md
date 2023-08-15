@@ -13,8 +13,8 @@ hero:
       text: Get started
       link: /quick-start/introduction
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: API reference
+      link: /api-reference/
 
 features:
   - icon: 🚀
