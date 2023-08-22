@@ -18,7 +18,7 @@ talabalar = Talaba.objects.filter(ismi__startswith='Ab')
 
 Bu kod orqali esa `ismi` Ab bilan boshlanadigan talabalar ro'yxatini olishimiz mumkin.
 
-`gt`, `startswith` lar `field lookup` deyiladi va ularning to'liq ro'yxati bilan [bu yerda](../../api-reference/field-lookups/index.md) tanishib chiqishingiz mumkin.
+`gt`, `startswith` lar `field lookup` deyiladi va ularning to'liq ro'yxati bilan [bu yerda](../../api-reference/queryset-field-lookups/index.md) tanishib chiqishingiz mumkin.
 
 ## Qoldi
 
