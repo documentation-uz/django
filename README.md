@@ -1,29 +1,11 @@
-# django
+# Xush kelibsiz
 
-This template should help get you started developing with Vue 3 in Vite.
+Ushbu repositoriya django freymvorkining o'zbek tilidagi dokumentatsiyasi uchun.
 
-## Recommended IDE Setup
+Har qanday django dasturchisi ushbu dokumentatsiyaga ma'lumot qo'shishga o'z hissasini qo'shishi mumkin.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Rasmiy veb sahifa: http://django.documentation.uz/
 
-## Customize configuration
+Github manzil: https://github.com/documentation-uz/django/
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Dokumentatsiyaning bosh sahifasi: https://github.com/documentation-uz/django/tree/main/src/pages/
