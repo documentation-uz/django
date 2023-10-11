@@ -15,17 +15,21 @@ manage.py
 
 Uning ichida `style.css` nomli fayl yaratamiz va uning ichiga quyidagi kodni kiritamiz.
 
-**`assets/style.css`**
-```css
+::: code-group
+
+```css [assets/style.css]
 .text-center {
     text-align: center;
 }
 ```
 
+:::
+
 Ana endi `config/settings.py` faylida assets papkasini ro'yxatdan o'tkazib qo'yamiz.
 
-**`config/settings.py`**
-```python {5-7}
+::: code-group
+
+```python {5-7} [config/settings.py]
 ...
 
 STATIC_URL = 'static/'
@@ -37,10 +41,13 @@ STATICFILES_DIRS = [
 ...
 ```
 
+:::
+
 `example.html` fayl ichida `style.css` faylini chaqirish uchun quyidagi o'zgarishlarni kiritamiz.
 
-**`templates/example.html`**
-```html {1,11,15,17}
+::: code-group
+
+```html {1,11,15,17} [templates/example.html]
 {% load static %}
 
 <!doctype html>
@@ -62,5 +69,7 @@ STATICFILES_DIRS = [
 </body>
 </html>
 ```
+
+:::
 
 Browserda manzilga kirib ko'rsangiz css fayl ishlaganini ko'rasiz.
