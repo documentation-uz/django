@@ -16,8 +16,9 @@ Har bir qator bitta obyekt hisoblanadi.
 
 Bu jadvalning modeli quyidagicha bo'ladi va uni `product/models.py` fayliga yozamiz.
 
-**`product/models.py`**
-```python
+::: code-group
+
+```python [product/models.py]
 from django.db import models
 
 class Product(models.Model):
@@ -25,6 +26,8 @@ class Product(models.Model):
     color = models.CharField(max_length=50)
     price = models.PositiveIntegerField()
 ```
+
+:::
 
 `Product` - modelning nomi. Jadvalda ustunlarning nomi `Product` modelining fieldlari sifatida yozildi. Faqat `id`
 ustuni yozilmadi. Sababi django `id` fieldini avtomatik ravishda o'zi qo'shadi.
