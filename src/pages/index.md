@@ -7,7 +7,7 @@ hero:
   tagline: Django documentation in Uzbek language
   image:
     src: https://cdn.icon-icons.com/icons2/2415/PNG/512/django_line_logo_icon_146560.png
-    alt: django-rest-framework-logo-documentation-uz
+    alt: django-framework-logo-documentation-uz
   actions:
     - theme: brand
       text: Get started
