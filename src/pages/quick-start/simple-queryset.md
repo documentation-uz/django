@@ -5,9 +5,9 @@ Bu darsda bazada turgan ma'lumotlarni html fayl orqali browser oynasida ko'rsati
 Avval `product/views.py` fayliga kiramiz, funksiya ichida bazadan barcha `Product` modeliga tegishli obyektlarni olish
 kodini yozamiz va bu ma'lumotlarni o'zgaruvchiga biriktirib, html faylga uzatamiz.
 
-**`product/views.py`**
+::: code-group
 
-```python {5,8,13}
+```python {5,8,13} [product/views.py]
 from django.shortcuts import render
 
 import datetime
@@ -24,6 +24,8 @@ def example(request):
     })
 ```
 
+:::
+
 Bu yerda `queryset`
 
 ```python
@@ -35,9 +37,9 @@ va bu `queryset`ning eng oddiy ko'rinishi.
 
 Endi `example.html`ga quyidagi o'zgarishlarni kiritamiz.
 
-**`templates/example.html`**
+::: code-group
 
-```html {19-22}
+```html {19-22} [templates/example.html]
 {% load static %}
 
 <!doctype html>
@@ -64,5 +66,7 @@ Endi `example.html`ga quyidagi o'zgarishlarni kiritamiz.
 </body>
 </html>
 ```
+
+:::
 
 Browserda manzilga kirsangiz, obyektlar ro'yxatini ko'rishingiz mumkin.
