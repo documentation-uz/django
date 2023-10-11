@@ -21,8 +21,9 @@ manage.py
 Proyektimizda endi product nomli application bor. Endi uni proyektimizda ro'yxatdan o'tkazib qo'yishimiz kerak.
 Buning uchun `config/setting.py` faylini ochamiz.
 
-**`config/setting.py`**
-```python 
+::: code-group
+
+```python [config/setting.py]
 ...
 
 INSTALLED_APPS = [
@@ -31,5 +32,7 @@ INSTALLED_APPS = [
     'product'
 ]
 ```
+
+:::
 
 Shu bilan `product` application proyektimizda ro'yxatdan o'tkazildi.
