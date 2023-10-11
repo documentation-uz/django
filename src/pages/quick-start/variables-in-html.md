@@ -3,7 +3,9 @@
 O'zgaruvchilarni html faylga views.py faylidagi funksiyalar orqali uzatish mumkin. Buning uchun `product/views.py`
 faylida quyidagicha o'zgartirish qilish kerak.
 
-```python
+::: code-group
+
+```python [product/views.py]
 from django.shortcuts import render
 
 import datetime
@@ -15,11 +17,14 @@ def example(request):
     })
 ```
 
+:::
+
 Bu yerda html fayl uchun `sana` va `ism` o'zgaruvchilarini e'lon qildik. Endi ularni html faylda qanday yozish
 kerakligini ko'rib chiqamiz. example.html faylni quyidagi ko'rinishga o'zgartiramiz.
 
-**`templates/example.html`**
-```html {15,17}
+::: code-group
+
+```html {15,17} [templates/example.html]
 {% load static %}
 
 <!doctype html>
@@ -41,5 +46,7 @@ kerakligini ko'rib chiqamiz. example.html faylni quyidagi ko'rinishga o'zgartira
 </body>
 </html>
 ```
+
+:::
 
 Browserda manzilga kirganimizda `ism` va `sana` o'zgaruvchilarining qiymatlari ekranda ko'rinadi.
