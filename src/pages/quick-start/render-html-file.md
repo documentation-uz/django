@@ -14,9 +14,9 @@ manage.py
 `templates` papkasini ichida tushunish oson bo'lishi uchun `example.html` nomli fayl yaratamiz va fayl ichiga quyidagi
 kodni kiritamiz.
 
-**`templates/example.html`**
+::: code-group
 
-```html
+```html [templates/example.html]
 <!doctype html>
 <html lang="en">
 <head>
@@ -36,10 +36,14 @@ kodni kiritamiz.
 </html>
 ```
 
+:::
+
 Endi `templates` papkasini proyektimizda ro'yxatdan o'tkazamiz. Buning uchun `config/settings.py` fayliga kiramiz,
 `TEMPLATES` o'zgaruvchisini topamiz va quyidagi o'zgartirishni kiritamiz.
 
-```python {6-8}
+::: code-group
+
+```python {6-8} [config/settings.py]
 ...
 
 TEMPLATES = [
@@ -63,13 +67,19 @@ TEMPLATES = [
 ...
 ```
 
+:::
+
 Navbat `product/views.py` fayliga keldi. Fayldagi kodni quyidagiga almashtiramiz.
 
-```python
+::: code-group
+
+```python [product/views.py]
 from django.shortcuts import render
 
 def example(request):
     return render(request, 'example.html')
 ```
+
+:::
 
 Endi siz browserda http://127.0.0.1:8000/example/ manziliga kirsangiz html fayli render qilinganini ko'rasiz.
